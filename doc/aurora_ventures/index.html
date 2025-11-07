@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurora Ventures | Investing in the Future</title>
+  <style>
+    :root {
+      --primary: #1f3c88;
+      --secondary: #f7b733;
+      --dark: #0f1a2b;
+      --light: #f5f7fa;
+      --text: #2c2c2c;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--light);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, rgba(31, 60, 136, 0.95), rgba(15, 26, 43, 0.95)),
+        url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1400&q=80') center/cover;
+      color: #fff;
+      padding: 4rem 2rem 6rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(15, 26, 43, 0.45);
+    }
+
+    header .content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 0.85rem 2.5rem;
+      background-color: var(--secondary);
+      color: var(--dark);
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(247, 183, 51, 0.3);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: -4rem auto 0;
+      padding: 0 1.5rem 4rem;
+    }
+
+    section {
+      background-color: #fff;
+      border-radius: 18px;
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 25px 60px rgba(15, 26, 43, 0.08);
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.75rem;
+      color: var(--primary);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      padding: 1.5rem;
+      border-radius: 14px;
+      border: 1px solid rgba(31, 60, 136, 0.1);
+      background-color: #fdfdff;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 35px rgba(31, 60, 136, 0.12);
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      align-items: start;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.95rem;
+      color: rgba(44, 44, 44, 0.7);
+    }
+
+    .team-member {
+      background: linear-gradient(135deg, rgba(31, 60, 136, 0.12), rgba(31, 60, 136, 0.02));
+      border: 1px solid rgba(31, 60, 136, 0.12);
+    }
+
+    .team-member h3 {
+      margin-top: 0;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .service-grid h3 {
+      margin-top: 0;
+      color: var(--dark);
+    }
+
+    .tagline {
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.85);
+      margin-bottom: 0;
+    }
+
+    .highlight {
+      color: var(--secondary);
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="content">
+      <p class="tagline">Aurora Ventures &mdash; Illuminating the next generation of category-defining founders</p>
+      <h1>Backing Bold Founders Building the Future</h1>
+      <p>
+        We partner with visionary teams accelerating innovation across AI-enabled software, digital health, and climate resilience.
+        From New York to the world, our network amplifies founders' ambitions.
+      </p>
+      <a href="#themes" class="button">Explore Our Focus</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="themes">
+      <h2>Investment Blueprint</h2>
+      <div class="two-column">
+        <div>
+          <h3>Fund Themes</h3>
+          <ul>
+            <li>AI-enabled SaaS</li>
+            <li>Digital health</li>
+            <li>Climate tech</li>
+            <li>Vertical enterprise software</li>
+            <li>Fintech infrastructure</li>
+            <li>Future of work</li>
+            <li>Cybersecurity</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Investment Stages</h3>
+          <ul>
+            <li>Seed</li>
+            <li>Series A</li>
+            <li>Series B</li>
+            <li>Growth equity</li>
+          </ul>
+          <h3>Geographies</h3>
+          <ul>
+            <li>North America</li>
+            <li>Europe</li>
+          </ul>
+          <h3>Domicile</h3>
+          <p>New York, USA</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Sector Expertise</h2>
+      <div class="grid">
+        <div class="card"><strong>Healthcare IT</strong><br>Scaling digital health solutions that improve patient outcomes and access.</div>
+        <div class="card"><strong>Financial Services</strong><br>Transforming the infrastructure powering global capital flows.</div>
+        <div class="card"><strong>Enterprise SaaS</strong><br>Backing systems of record and intelligence redefining work.</div>
+        <div class="card"><strong>Sustainability</strong><br>Fueling climate-positive platforms for a resilient planet.</div>
+        <div class="card"><strong>Cybersecurity</strong><br>Protecting data integrity across distributed ecosystems.</div>
+        <div class="card"><strong>Logistics</strong><br>Modernizing supply chains with automation and intelligence.</div>
+        <div class="card"><strong>Consumer marketplaces</strong><br>Curating trusted, high-engagement community experiences.</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Portfolio Highlights</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>CarbonPath</h3>
+          <p>AI-driven carbon accounting SaaS for manufacturers.</p>
+        </div>
+        <div class="card">
+          <h3>MedAI</h3>
+          <p>Digital therapeutics for chronic disease.</p>
+        </div>
+        <div class="card">
+          <h3>NovaGrid</h3>
+          <p>Energy optimization for distributed solar networks.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Investment Team</h2>
+      <div class="grid">
+        <div class="card team-member">
+          <h3>Alex Chen</h3>
+          <p><span class="highlight">Managing Partner</span></p>
+          <p>
+            MBA, Stanford GSB<br>
+            Formerly at Amazon.
+          </p>
+          <p>
+            Alex leads AI-enabled SaaS and enterprise investments, bringing a builder's mindset to every partnership.
+          </p>
+        </div>
+        <div class="card team-member">
+          <h3>Jordan Gonzalez</h3>
+          <p><span class="highlight">Partner</span></p>
+          <p>
+            MBA, Harvard Business School<br>
+            Formerly at Goldman Sachs.
+          </p>
+          <p>
+            Jordan heads fintech infrastructure and climate tech, blending capital markets rigor with sustainability insights.
+          </p>
+        </div>
+        <div class="card team-member">
+          <h3>Taylor Patel</h3>
+          <p><span class="highlight">Partner</span></p>
+          <p>
+            MBA, Wharton School<br>
+            Formerly at McKinsey &amp; Company.
+          </p>
+          <p>
+            Taylor champions future of work and digital health, guiding founders on go-to-market and scaling strategies.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Service Partner Network</h2>
+      <div class="service-grid">
+        <div>
+          <h3>Legal</h3>
+          <ul>
+            <li>Cooley LLP</li>
+            <li>Wilson Sonsini</li>
+            <li>Fenwick &amp; West</li>
+            <li>Goodwin Procter</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Audit</h3>
+          <ul>
+            <li>KPMG</li>
+            <li>Deloitte</li>
+            <li>PwC</li>
+            <li>EY</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Tax</h3>
+          <ul>
+            <li>BDO</li>
+            <li>Grant Thornton</li>
+            <li>RSM</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Fund Administration</h3>
+          <ul>
+            <li>Apex Fund Services</li>
+            <li>Standish Management</li>
+            <li>Juniper Square</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Partner with Aurora Ventures</h2>
+      <div class="two-column">
+        <div>
+          <p>
+            We invest in trailblazers who combine deep industry insight with relentless execution. Our partners gain access to
+            capital, talent networks, and a community of operators dedicated to scaling impact.
+          </p>
+          <p>
+            From first check through growth rounds, we bring hands-on support, strategic depth, and global reach.
+          </p>
+        </div>
+        <div>
+          <p><strong>Reach out:</strong></p>
+          <p><a href="mailto:hello@auroravc.com">hello@auroravc.com</a></p>
+          <p><strong>Offices:</strong><br>45 Hudson Yards, Floor 38<br>New York, NY 10001</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <script>document.write(new Date().getFullYear());</script> Aurora Ventures. All rights reserved.
+  </footer>
+</body>
+</html>
